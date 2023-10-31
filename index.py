@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
-
+# Google Image Search got blocked by Google, so I changed the code to Naver Image Search
+# Bing is a good alternative as well     
 response = urlopen('https://www.naver.com/')
 soup = BeautifulSoup(response, 'html.parser')
 i = 1
